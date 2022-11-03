@@ -13,7 +13,7 @@ Your challenge is to build the back end for an e-commerce site. You’ll take a 
 
 ## Video Tutorial
 
-
+[Video Tutorial](https://youtu.be/lk5sSylw8rY)
 
 ## Acceptance Criteria
 
