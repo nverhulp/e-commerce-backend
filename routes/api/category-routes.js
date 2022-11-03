@@ -48,15 +48,16 @@ router.get('/:id', (req, res) => {
 
 // CREATE NEW CATEGORY
 router.post('/', (req, res) => {
-  Category.createNew({
+  Category.create({
     category_name: req.body.category_name
   })
-  .then(dbCategoryData => res.json(dbCategoryData))
-  .catch(err => {
-    console.log(err);
-    res.status(500).json(err);
-  });
+    .then(dbCatData => res.json(dbCatData))
+    .catch(err => {
+      console.log(err);
+      res.status(500).json(err);
+    });
 });
+
 
 // UPDATE CATEGORY BY ITS ID VALUE
 router.put('/:id', (req, res) => {
